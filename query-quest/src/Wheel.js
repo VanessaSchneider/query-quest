@@ -1,9 +1,7 @@
-function Wheel() {
-    return (
-      <div>
-      
-      </div>
-    );
-  }
+import React, { useEffect, useState } from 'react'
+
+function Wheel(){
+    
+}
   
-  export default Wheel;
+export default Wheel
