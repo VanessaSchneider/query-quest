@@ -13,7 +13,6 @@ function Wheel({handleRandom, categories, randomCategory}) {
 
   function handleClick() {
   const randomNumber = getRandomCat()
-  console.log(randomNumber)
   handleRandom(randomNumber)
   setTimeout(()=>routeChange(), 3000)
   }
