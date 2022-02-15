@@ -2,9 +2,14 @@
     "questions": [
       {
         "id": 1,
-        "query": "",
-        "answers": [],
-        "correctIndex":""
+        "question": "What is the name of our galaxy?",
+        "answer": "Milky Way",
+        "category": "Science"
       }
+      { "id": 2,
+        "question": "Where did Romeo and Juliet take place?",
+        "answer": "Verona, Italy",
+        "category": "Literature"
+        }
     ]
   }

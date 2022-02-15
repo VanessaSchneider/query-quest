@@ -10,11 +10,9 @@ import categories from "./category_data";
 
 function App() {
  
-  const [randomCategory, setRandomCategory]=useState(true)
+  const [randomCategory, setRandomCategory]=useState("")
 
-  const categoriesToShow = categories
-  .filter(category=>randomCategory ? randomCategory.id : true)
-    
+  const categoriesToShow = categories.filter((category)=>(category.id.includes(randomCategory)))
 
 return(
 
@@ -29,7 +27,7 @@ return(
           <QuestionForm />
         </Route>
         <Route path="/">
-          <Home categories={categories, randomCategory, setRandomCategory}/>
+          <Home categoriesToShow={categories}/>
         </Route>
       </Switch>
   </div>
