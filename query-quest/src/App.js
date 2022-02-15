@@ -6,6 +6,7 @@ import './index.css'
 import QuestionForm from './QuestionForm';
 import Home from './Home';
 import {categories} from "./category_data";
+import Game from './Game';
 
 function App() {
  
@@ -41,6 +42,9 @@ return(
     <h1>Query Quest</h1>
     <NavBar />
     <Switch>
+        <Route path = "/game">
+          <Game />
+        </Route>
         <Route path="/playGame">
           <Wheel handleRandom={handleRandom} randomCategory={randomCategory} categories={categories}/>
           </Route>
