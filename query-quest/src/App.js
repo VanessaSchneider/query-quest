@@ -16,9 +16,12 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/questions")
+    fetch("http://localhost:8003/questions")
       .then((r) => r.json())
-      .then((questions) => setQuestions(questions));
+      .then((data) => {
+        console.log(data)
+        setQuestions(data)
+      });
   }, []);
 
 
@@ -29,10 +32,8 @@ function App() {
 
 
 
-
   function handleRandom(Obj){
     setRandomCategory(categories.filter((category)=>{return category===Obj}))
-    console.log(randomCategory)
     }
 
 return(
@@ -43,7 +44,7 @@ return(
     <NavBar />
     <Switch>
         <Route path = "/game">
-          <Game />
+          <Game questions = {questions} category = {randomCategory}/>
         </Route>
         <Route path="/playGame">
           <Wheel handleRandom={handleRandom} randomCategory={randomCategory} categories={categories}/>

@@ -1,5 +1,4 @@
 function CategoryCard({category}) {
-    console.log(category)
     return (
      <div className="catTile ui card">
      <div>
