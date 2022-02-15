@@ -30,10 +30,9 @@ import React, { useState } from "react";
             const formData = {
                question: question,
                 category: category,
-                answers: answers,
-                correctIndex: parseInt(correctIndex)
+                answers: [answers],
+                correctIndex: parseInt(correctIndex),
               };
-        console.log(formData)
 
         fetch("http://localhost:3000/questions", {
           method: "POST",
@@ -42,11 +41,10 @@ import React, { useState } from "react";
           },
           body: JSON.stringify(formData),
         })
-          .then((r) => r.json())
-          .then((newObj) => handleAddQuestion(newObj));
-      }
+          
+        handleAddQuestion(formData);
+        }
 
-      
         return (
           <form onSubmit={handleSubmit}>
 
@@ -60,7 +58,7 @@ import React, { useState } from "react";
         <option value = "Pokemon">Pokemon</option>
         <option value = "History">History</option>
         <option value = "Science">Science</option>
-        <option value = "Literature">Literature</option>
+  n      <option value = "Literature">Literature</option>
         </select>  
           <input type="text" placeholder="Type your question"  onChange={handleQuestion} value={question} />
           <input type="text" placeholder = "Type your answers" onChange={handleAnswer} value={answers} />

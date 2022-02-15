@@ -22,7 +22,9 @@ function App() {
 
 
   function handleAddQuestion(newObj) {
-    console.log(newObj)
+      setQuestions([...questions, newObj]);
+      console.log(questions)
+  
   }
   
 
