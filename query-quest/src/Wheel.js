@@ -1,21 +1,28 @@
 import CategoryCard from "./CategoryCard";
 import {getRandomCat} from "./category_data"
+import { useHistory } from "react-router-dom";
 
 
 function Wheel({handleRandom, categories, randomCategory}) {
+    const history = useHistory();
+  
+    const routeChange = () =>{ 
+        let path = `/game`; 
+        history.push(path);
+    }
 
   function handleClick() {
   const randomNumber = getRandomCat()
   console.log(randomNumber)
   handleRandom(randomNumber)
+  setTimeout(()=>routeChange(), 3000)
   }
 
   const catCard = categories.map((category)=>
   (<CategoryCard category={category} key={category.name}/> ))
-
+    //randomcategory[0] is our randomly selected category
   const singleCatCard = <CategoryCard category = {randomCategory[0]} />
 
-  //randomcategory[0] is our randomly selected category
 
     return (
       <div>
