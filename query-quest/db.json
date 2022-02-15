@@ -1,15 +1,41 @@
 {
     "questions": [
       {
-        "id": 1,
         "question": "What is the name of our galaxy?",
-        "answer": "Milky Way",
-        "category": "Science"
-      }
-      { "id": 2,
+        "answers": ["Milky Way", "Andromeda", "Canis Major Dwarf Galaxy", "A Galaxy Far, Far Away"],
+        "correctIndex": 1,
+        "category": "science"
+      },
+      { 
         "question": "Where did Romeo and Juliet take place?",
-        "answer": "Verona, Italy",
-        "category": "Literature"
-        }
+        "answers": ["Verona, Italy", "Paris, France", "Rome", "Flint, Michigan"],
+        "correctIndex": 1,
+        "category": "literature"
+      },
+      {
+        "question": "Who's that pokemon?",
+        "imageLink":"",
+        "answers": ["Pikachu", "Bulbasaur", "Jigglypuff", "Snorlax"],
+        "correctIndex": 3,
+        "category": "pokemon"
+      },
+      {
+        "question": "Who was the 16th President of the United States?",
+        "answers": ["Donald Trump", "Abraham Lincoln", "William Taft", "Thomas Jefferson"],
+        "correctIndex": 2,
+        "category": "history"
+      },
+      {
+        "question": "Question: Who voiced both Darth Vader and The Lion King's Mufasa?",
+        "answers": ["James Earl Jones", "Harrison Ford", "William Taft", "Morgan Freeman"],
+        "correctIndex": 1,
+        "category": "entertainment"
+      },
+      {
+        "question": "Who painted the Sistene Chapel?",
+        "answers": ["Michelangelo", "Donatello", "Rafael", "Leonardo"],
+        "correctIndex": 1,
+        "category": "art"
+      }
     ]
   }

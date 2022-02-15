@@ -9,31 +9,28 @@ import {categories} from "./category_data";
 
 function App() {
  
-  const [randomCategory, setRandomCategory]=useState(true)
+  const [randomCategory, setRandomCategory]=useState(false)
 
   function handleRandom(Obj){
-    setRandomCategory(categories.filter((category)=>category===Obj))
-
+    setRandomCategory(categories.filter((category)=>{return category===Obj}))
     console.log(randomCategory)
     }
-
-    const categoriesToShow= categories.filter((category)=>
-    (category === randomCategory) ? category.name : true)
 
 return(
 
 
   <div>
+    <h1>Query Quest</h1>
     <NavBar />
     <Switch>
         <Route path="/playGame">
-          <Wheel />
+          <Wheel handleRandom={handleRandom} randomCategory={randomCategory} categories={categories}/>
           </Route>
         <Route path="/newQuestion">
           <QuestionForm />
         </Route>
         <Route path="/">
-          <Home handleRandom={handleRandom} randomCategory={randomCategory} categories={categoriesToShow} />
+          <Home />
         </Route>
       </Switch>
   </div>
