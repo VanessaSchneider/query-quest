@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-      function QuestionForm() {
+      function QuestionForm({handleAddQuestion}) {
         const [question, setQuestion] = useState("");
         const [category, setCategory] = useState("");
-        const [answer, setAnswer] = useState("");
+        const [answers, setAnswers] = useState("");
+        const [correctIndex, setCorrectIndex] = useState("");
         
       
       
@@ -16,7 +17,11 @@ import React, { useState } from "react";
         }
 
         function handleAnswer(event) {
-          setAnswer(event.target.value);
+          setAnswers(event.target.value);
+        }
+
+        function handleIndex(event) {
+          setCorrectIndex(event.target.value);
         }
 
 
@@ -24,14 +29,42 @@ import React, { useState } from "react";
           e.preventDefault();
             const formData = {
                question: question,
-                category: category };
-        }
+                category: category,
+                answers: answers,
+                correctIndex: parseInt(correctIndex)
+              };
+        console.log(formData)
+
+        fetch("http://localhost:3000/questions", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((r) => r.json())
+          .then((newObj) => handleAddQuestion(newObj));
+      }
+
       
         return (
           <form onSubmit={handleSubmit}>
-          <input type="text"  onChange={handleQuestion} value={question} />
-          <input type="text"  onChange={handleAnswer} value={answer} />
-          <input type="text"  onChange={handleCategory} value={category} />
+
+<select
+      className="ui selection dropdown"
+      name = "sort"
+      onChange={handleCategory}
+      value = {category}>
+        <option value = "Entertainment">Entertainment</option>
+        <option value = "Art">Art</option>
+        <option value = "Pokemon">Pokemon</option>
+        <option value = "History">History</option>
+        <option value = "Science">Science</option>
+        <option value = "Literature">Literature</option>
+        </select>  
+          <input type="text" placeholder="Type your question"  onChange={handleQuestion} value={question} />
+          <input type="text" placeholder = "Type your answers" onChange={handleAnswer} value={answers} />
+          <input type="text" placeholder = "Which answer is correct" onChange={handleIndex} value={correctIndex} />
           <button type="submit">Submit</button>
         </form>
         );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import NavBar from "./NavBar";
 import Wheel from './Wheel'
 import { Route, Switch } from "react-router-dom";
@@ -9,7 +9,25 @@ import {categories} from "./category_data";
 
 function App() {
  
+  const [questions, setQuestions]=useState([])
   const [randomCategory, setRandomCategory]=useState(false)
+
+
+
+  useEffect(() => {
+    fetch("http://localhost:3000/questions")
+      .then((r) => r.json())
+      .then((questions) => setQuestions(questions));
+  }, []);
+
+
+  function handleAddQuestion(newObj) {
+    console.log(newObj)
+  }
+  
+
+
+
 
   function handleRandom(Obj){
     setRandomCategory(categories.filter((category)=>{return category===Obj}))
@@ -27,7 +45,7 @@ return(
           <Wheel handleRandom={handleRandom} randomCategory={randomCategory} categories={categories}/>
           </Route>
         <Route path="/newQuestion">
-          <QuestionForm />
+          <QuestionForm handleAddQuestion={handleAddQuestion} />
         </Route>
         <Route path="/">
           <Home />
