@@ -3,46 +3,51 @@ const categories = [
      id: 1,
       name: "Science",
       image:
-        "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/babe.jpg",
+        "img"
     },
 
     {
       id: 2,
       name: "Pokemon",
       image:
-        "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/porkchop.jpg",
+        "img"
     },
 
     {
         id: 3,
       name: "Literature",
       image:
-        "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/cherub.jpg",
+        "img"
     },
 
     {id: 4,
       name: "Art",
       image:
-        "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/piggy_smalls.jpg",
+        "img"
     },
 
     {
         id: 5,
       name: "History",
       image:
-        "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/trouble.jpg",
+        "img"
     },
 
     {
         id: 6,
       name: "Entertainment",
       image:
-        "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/piglet.jpg",
+        "img"
     },
   ];
   
+  const getRandomCat = () => 
+  categories[Math.floor(Math.random() * 6)]
 
-  export default categories;
+  export {categories, getRandomCat} 
+
+
+  
 
   
   

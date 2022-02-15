@@ -5,16 +5,20 @@ import { Route, Switch } from "react-router-dom";
 import './index.css'
 import QuestionForm from './QuestionForm';
 import Home from './Home';
-import CategoryCard from "./CategoryCard";
-import categories from "./category_data";
+import {categories} from "./category_data";
 
 function App() {
  
   const [randomCategory, setRandomCategory]=useState(true)
 
-  const categoriesToShow = categories
-  .filter(category=>randomCategory ? randomCategory.id : true)
-    
+  function handleRandom(Obj){
+    setRandomCategory(categories.filter((category)=>category===Obj))
+
+    console.log(randomCategory)
+    }
+
+    const categoriesToShow= categories.filter((category)=>
+    (category === randomCategory) ? category.name : true)
 
 return(
 
@@ -29,7 +33,7 @@ return(
           <QuestionForm />
         </Route>
         <Route path="/">
-          <Home categories={categories, randomCategory, setRandomCategory}/>
+          <Home handleRandom={handleRandom} randomCategory={randomCategory} categories={categoriesToShow} />
         </Route>
       </Switch>
   </div>

@@ -1,29 +1,25 @@
 import CategoryCard from "./CategoryCard";
-import categories from "./category_data";
+import {getRandomCat} from "./category_data"
 
 
-function Home({randomCategory, setRandomCategory}) {
-
-
-  const catCard = categories.map((category)=>
-  (<CategoryCard category={category} key={category.id}/> ))
+function Home({handleRandom, categories}) {
 
 
   
-  function handleRandomClick(event){
-   const getRandomCat = () => 
-  categories[Math.floor(Math.random() * categories.length)]
-    const randomId = parseInt((getRandomCat().id))
-    console.log(randomId)
- }
+  
+  function handleClick() {
+  const randomNumber = getRandomCat()
+  console.log(randomNumber)
+handleRandom(randomNumber)
+  }
 
-
-
+  const catCard = categories.map((category)=>
+  (<CategoryCard category={category} key={category.name}/> ))
 
 
     return (
       <div>
-        <button onClick={handleRandomClick}>Randomly Selected Category</button>
+        <button onClick={handleClick}>Randomly Selected Category</button>
       <div className= "ui three stackable cards">
         {catCard}
       </div>
