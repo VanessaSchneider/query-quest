@@ -96,7 +96,7 @@ name = "sort"
 onChange={handleIndex}
 value = {correctIndex}
 >
-  <option value="" disabled selected hidden>Choose correct answer </option>
+  <option value="default" disabled selected hidden>Choose correct answer </option>
   <option value = "1">1</option>
   <option value = "2">2</option>
   <option value = "3">3</option>
