@@ -6,11 +6,20 @@ function Game({questions, category}) {
     const [display, setDisplay] = useState(null)
     const [timeRemaining, setTimeRemaining] = useState(10);
     const [go, setGo] = useState(true)
-    const [correct, setCorrect] = useState(null)
+    const [correct, setCorrect] = useState("")
+
+    function answerKey() {
+
+        if (correct === "") {
+           return null
+       }
+       else if (correct === true ) { return <p>Correct!</p>}
+       else if (correct === false) {return <p>Incorrect</p>}}
+
 
    
     
-   
+
 
     useEffect(()=>{
         
@@ -24,7 +33,6 @@ function Game({questions, category}) {
            function handle3(e){ (newQuestions[0].correctIndex === 3) ? setCorrect(true) : setCorrect(false)}
            function handle4(e){ (newQuestions[0].correctIndex === 4) ? setCorrect(true) : setCorrect(false)}
            
-
 
            setDisplay(
 
@@ -48,7 +56,7 @@ function Game({questions, category}) {
         const timeout = setTimeout(()=>{
             if(timeRemaining !== 0){
             setTimeRemaining(()=>timeRemaining-1) }
-        }, 80)
+        }, 1000)
         
         return function clearTimeout() {
             console.log("cleared")
@@ -59,18 +67,12 @@ function Game({questions, category}) {
 
 
     
-
-
-
-
-
-    
     return(
         <div>
             <h1>Here's Your Question:</h1>
             {display}
             <p>{timeRemaining} Seconds Left</p>
-            {correct ? <p>Correct</p>: <p>Sorry, Incorrect</p>}
+          {answerKey()}
         </div>
     )
 }
