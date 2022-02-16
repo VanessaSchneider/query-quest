@@ -53,7 +53,7 @@ function QuestionForm({handleAddQuestion}) {
           correctIndex: parseInt(correctIndex),
         };
         
-  fetch("http://localhost:8003/questions", {
+  fetch("http://localhost:3000/questions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

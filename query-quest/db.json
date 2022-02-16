@@ -8,7 +8,7 @@
       },
       { 
         "question": "Where did Romeo and Juliet take place?",
-        "answers": ["Verona, Italy", "Paris, France", "Rome", "Flint, Michigan"],
+        "answers": ["Verona, Italy", "Paris, France", "Rome, Italy", "Flint, Michigan"],
         "correctIndex": 1,
         "category": "Literature"
       },
