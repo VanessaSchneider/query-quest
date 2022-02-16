@@ -1,8 +1,13 @@
-
+import castle from "./castle.jpeg"
 function Home() {
 
     return (
-      <h1>Home</h1>
+
+      <div>
+     
+      <img className = "size" src= {castle}  alt="picture"/>
+      
+      </div>
     )
   }
   

@@ -7,6 +7,7 @@ function Game({questions, category}) {
     const [timeRemaining, setTimeRemaining] = useState(10);
     const [go, setGo] = useState(true)
     const [correct, setCorrect] = useState("")
+    const [numberCorrect, setNumberCorrect] = useState(0)
 
     function answerKey() {
 
@@ -17,7 +18,11 @@ function Game({questions, category}) {
        else if (correct === false) {return <p>Incorrect</p>}}
 
 
-   
+   function Increment() {
+   if(correct === true)  {setNumberCorrect((numberCorrect)=> numberCorrect +1)}
+   else {setNumberCorrect(numberCorrect) }
+    return <p> You currently have {numberCorrect} correct</p>
+}
     
 
 

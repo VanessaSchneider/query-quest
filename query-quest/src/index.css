@@ -4,13 +4,19 @@
   background-repeat: no-repeat;
   background-position: center 90%;
   float: left;
-  margin: 2%;
-  padding: 1%;
+  margin: 0%;
+  padding: 0%;
   transition: 0.75s;
   opacity: 1;
-  height: 250px;
-  width: 250px;
+  height: 50 px;
+  width: 50 px;
   text-align: center;
+}
+
+.size{
+height: 350px;
+width : 350px
+
 }
 
 
