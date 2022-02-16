@@ -1,10 +1,47 @@
 {
     "questions": [
       {
-        "id": 1,
-        "query": "",
-        "answers": [],
-        "correctIndex":""
+        "question": "What is the name of our galaxy?",
+        "answers": ["Milky Way", "Andromeda", "Canis Major Dwarf Galaxy", "A Galaxy Far, Far Away"],
+        "correctIndex": 1,
+        "category": "Science"
+      },
+      { 
+        "question": "Where did Romeo and Juliet take place?",
+        "answers": ["Verona, Italy", "Paris, France", "Rome", "Flint, Michigan"],
+        "correctIndex": 1,
+        "category": "Literature"
+      },
+      {
+        "question": "Who's that pokemon?",
+        "imageLink":"",
+        "answers": ["Pikachu", "Bulbasaur", "Jigglypuff", "Snorlax"],
+        "correctIndex": 3,
+        "category": "Pokemon"
+      },
+      {
+        "question": "Who was the 16th President of the United States?",
+        "answers": ["Donald Trump", "Abraham Lincoln", "William Taft", "Thomas Jefferson"],
+        "correctIndex": 2,
+        "category": "History"
+      },
+      {
+        "question": "Question: Who voiced both Darth Vader and The Lion King's Mufasa?",
+        "answers": ["James Earl Jones", "Harrison Ford", "William Taft", "Morgan Freeman"],
+        "correctIndex": 1,
+        "category": "Entertainment"
+      },
+      {
+        "question": "Who painted the Sistene Chapel?",
+        "answers": ["Michelangelo", "Donatello", "Rafael", "Leonardo"],
+        "correctIndex": 1,
+        "category": "Art"
+      },
+      {
+        "question": "Who was the first man on the moon??",
+        "answers": ["Buzz Aldrin", "Niel Armstrong", "Jeff Bezos", "Donald Trump"],
+        "correctIndex": 2,
+        "category": "History"
       }
     ]
   }
