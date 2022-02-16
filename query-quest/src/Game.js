@@ -6,7 +6,7 @@ function Game({questions, category}) {
     const [display, setDisplay] = useState(null)
     const [timeRemaining, setTimeRemaining] = useState(10);
     const [go, setGo] = useState(true)
-    const [correct, setCorrect] = useState(false)
+    const [correct, setCorrect] = useState(null)
 
    
     
