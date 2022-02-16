@@ -1,9 +1,21 @@
 
 
+
+
+
+input {
+  width : 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 li:first-child .text{
   background-color: blue;
   transform: rotate(0deg) skewY(-1200deg);
 }
+
+
 
 li:nth-child(2) .text {
   background-color: red;
