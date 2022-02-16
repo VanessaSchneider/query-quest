@@ -21,11 +21,11 @@
   background-position: center 90%;
   float: left;
   margin: 2%;
-  padding: 1%;
+  padding: 10px 10px;
   outline: #3B0B0B solid;
   transition: 0.75s;
   opacity: 1;
-  height: 250px;
+  height: 200x;
   width: 250px;
   text-align: center;
 }
