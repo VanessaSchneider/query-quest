@@ -1,5 +1,61 @@
 
+.castleTile {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center 90%;
+  float: left;
+  margin: 2%;
+  padding: 1%;
+  transition: 0.75s;
+  opacity: 1;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+}
 
+
+
+.catTile {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center 90%;
+  float: left;
+  margin: 2%;
+  padding: 1%;
+  outline: #3B0B0B solid;
+  transition: 0.75s;
+  opacity: 1;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+}
+
+
+.lowerSpace{
+margin-top: 40px;
+
+}
+
+.typeQuestion{
+width: 70%
+
+}
+
+
+
+select {
+  width : 175px;
+  padding: 0px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+input {
+  width : 175px;
+  padding: 0px;
+  margin: 5px;
+  box-sizing: border-box;
+}
 li:first-child .text{
   background-color: blue;
   transform: rotate(0deg) skewY(-1200deg);
@@ -59,19 +115,4 @@ li{
   width: 200%;
   height: 200%;
   text-align: center;
-}
-
-
-.catTile {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center 90%;
-  float: left;
-  margin: 2%;
-  padding: 1%;
-  outline: #3B0B0B solid;
-  transition: 0.75s;
-  opacity: 1;
-  height: 250px;
-  width: 250px;
 }
