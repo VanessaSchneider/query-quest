@@ -1,6 +1,7 @@
 import CategoryCard from "./CategoryCard";
 import {getRandomCat} from "./category_data"
 import { useHistory } from "react-router-dom";
+import React, {useState} from "react";
 
 
 function Wheel({handleRandom, categories, randomCategory}) {

@@ -36,6 +36,12 @@
         "answers": ["Michelangelo", "Donatello", "Rafael", "Leonardo"],
         "correctIndex": 1,
         "category": "Art"
+      },
+      {
+        "question": "Who was the first man on the moon??",
+        "answers": ["Buzz Aldrin", "Niel Armstrong", "Jeff Bezos", "Donald Trump"],
+        "correctIndex": 2,
+        "category": "History"
       }
     ]
   }

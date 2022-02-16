@@ -9,7 +9,6 @@ import {categories} from "./category_data";
 import Game from './Game';
 
 function App() {
- 
   const [questions, setQuestions]=useState([])
   const [randomCategory, setRandomCategory]=useState(false)
 
@@ -19,16 +18,13 @@ function App() {
     fetch("http://localhost:8003/questions")
       .then((r) => r.json())
       .then((data) => {
-        console.log(data)
         setQuestions(data)
       });
   }, []);
 
 
   function handleAddQuestion(newObj) {
-      setQuestions([...questions, newObj]);
-      console.log(questions)
-  
+      setQuestions([...questions, newObj]);  
   }
   
 
@@ -47,7 +43,7 @@ return(
     <Switch>
         <Route path = "/game">
           <Game questions = {questions} category = {randomCategory}/>
-        </Route>
+        </Route>  
         <Route path="/playGame">
           <Wheel handleRandom={handleRandom} randomCategory={randomCategory} categories={categories}/>
           </Route>
