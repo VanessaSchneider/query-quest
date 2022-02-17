@@ -125,6 +125,19 @@
         "Saturn"
       ],
       "correctIndex": 3
+    },
+    {
+      "question": "Who's that pokemon?",
+      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "answers": [
+        "Mr. Mime",
+        "Bulbasaur",
+        "Clefairy",
+        "Charizard"
+      ],
+      "correctIndex": 2,
+      "category": "Pokemon"
     }
+    
   ]
 }

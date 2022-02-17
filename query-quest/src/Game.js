@@ -16,10 +16,10 @@ function Game({questions, category}) {
     return <p> You currently have {numberCorrect} correct</p>
 }
     function toShow(){
-
-    if (correct === null) {return null}
-    else if (correct === true) {return <p>Correct</p>}
-    else if (correct === false) {return <p>Sorry, Incorrect</p>}}
+        if (correct === null) {return null}
+        else if (correct === true) {return <p>Correct</p>}
+        else if (correct === false) {return <p>Sorry, Incorrect</p>}
+    }
    
 
     useEffect(()=>{
@@ -54,6 +54,7 @@ function Game({questions, category}) {
            setDisplay(
                <div>
                <p>{newQuestions[0].question}</p>
+               <p>{<img src = {newQuestions[0].imageLink}/>}</p>
                <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {1}>{newQuestions[0].answers[0]}</button>
                <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {2}>{newQuestions[0].answers[1]}</button>
                <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {3}>{newQuestions[0].answers[2]}</button>

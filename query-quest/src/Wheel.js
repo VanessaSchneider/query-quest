@@ -6,7 +6,6 @@ import React, {useState} from "react";
 
 function Wheel({handleRandom, categories, randomCategory}) {
     const history = useHistory();
-  
     const routeChange = () =>{ 
         let path = `/game`; 
         history.push(path);
@@ -27,7 +26,7 @@ function Wheel({handleRandom, categories, randomCategory}) {
     return (
       <div>
         <button onClick={handleClick}>Randomly Selected Category</button>
-      <div className= "ui three stackable cards">
+        <div className= "ui three stackable cards">
         {randomCategory !== false ? singleCatCard : catCard}
       </div>
       </div>
