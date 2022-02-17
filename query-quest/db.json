@@ -81,14 +81,15 @@
     {
       "id": 4228982692,
       "question": "How many days were Kim Kardashian and Kris Humphries married?",
-      "category": "Entertainment",
       "answers": [
         "13 days",
         "99 days",
         "72 days",
         "57 days"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,      
+      "category": "Entertainment"
+
     },
     {
       "id": 4170007201,

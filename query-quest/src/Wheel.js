@@ -20,7 +20,7 @@ function Wheel({handleRandom, categories, randomCategory}) {
   const catCard = categories.map((category)=>
   (<CategoryCard category={category} key={category.name}/> ))
     //randomcategory[0] is our randomly selected category
-  const singleCatCard = <CategoryCard category = {randomCategory[0]} />
+  const singleCatCard = <CategoryCard category = {randomCategory[0]} classes = {"singleCard"}/>
 
 
     return (

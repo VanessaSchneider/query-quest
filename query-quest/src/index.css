@@ -140,3 +140,8 @@ li{
 .hidden{
   visibility: hidden;
 }
+
+.singleCard{
+  text-align: center;
+  justify-content: center;
+}

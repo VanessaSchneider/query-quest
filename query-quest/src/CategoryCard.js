@@ -1,6 +1,6 @@
-function CategoryCard({category}) {
+function CategoryCard({category, classes}) {
     return (
-     <div className="catTile ui card">
+     <div className = {classes !== undefined ? classes : "catTile ui card"}>
      <div>
        <h1> {category.name}  </h1>
        <h1>{category.image}</h1>

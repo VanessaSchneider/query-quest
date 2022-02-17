@@ -9,6 +9,7 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
     const [correct, setCorrect] = useState(null)
     const [answer, setAnswer] = useState(false)
     const [numberCorrect, setNumberCorrect]=useState(0)
+    
 
    function Increment() {
    if(correct === true)  {setNumberCorrect((numberCorrect)=> numberCorrect +1)}
@@ -23,8 +24,6 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
    
 
     useEffect(()=>{
-
-
        if(questions !== []){
            const newQuestions = questions.filter((question)=>{
                return question.category === category[0].name
@@ -35,7 +34,9 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
 
 
            function handleClick(e) { 
-               if (newQuestions[0].correctIndex === e.target.value){
+               console.log(newQuestions[0].correctIndex)
+               console.log(e.target.value)
+               if (`${questionObj.correctIndex}` === e.target.value){
                     setCorrect(true)
                     console.log("correct")
                     setCorrectAnswers(correctAnswers + 1)
@@ -61,7 +62,7 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
              )
            }
     
-    },[correct])
+    },[])
 
 
 
