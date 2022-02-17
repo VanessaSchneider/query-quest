@@ -11,7 +11,7 @@ import Game from './Game';
 function App() {
   const [questions, setQuestions]=useState([])
   const [randomCategory, setRandomCategory]=useState(false)
-  const [correctAnswers, setCorrectAnswers] = useState(5)
+  const [correctAnswers, setCorrectAnswers] = useState(0)
 
 
 

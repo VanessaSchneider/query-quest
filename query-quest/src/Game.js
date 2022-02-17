@@ -5,25 +5,20 @@ import { NavLink } from "react-router-dom";
 function Game({questions, category, correctAnswers, setCorrectAnswers}) {
     const [display, setDisplay] = useState(null)
     const [timeRemaining, setTimeRemaining] = useState(10);
-    const [go, setGo] = useState(true)
     const [correct, setCorrect] = useState(null)
     const [answer, setAnswer] = useState(false)
-    const [numberCorrect, setNumberCorrect]=useState(0)
-    
 
-   function Increment() {
-   if(correct === true)  {setNumberCorrect((numberCorrect)=> numberCorrect +1)}
-   else {setNumberCorrect(numberCorrect) }
-    return <p> You currently have {numberCorrect} correct</p>
-}
     function toShow(){
         if (correct === null) {return null}
         else if (correct === true) {return <p>Correct</p>}
         else if (correct === false) {return <p>Sorry, Incorrect</p>}
     }
    
-
     useEffect(()=>{
+        if(timeRemaining === 0){
+            setAnswer(true)
+            setCorrect(false)
+        }
        if(questions !== []){
            const newQuestions = questions.filter((question)=>{
                return question.category === category[0].name
@@ -62,7 +57,7 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
              )
            }
     
-    },[])
+    },[answer])
 
 
 
@@ -73,7 +68,11 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
             if(timeRemaining !== 0){
                 setTimeRemaining(()=>timeRemaining-1)
             }
+            else{
+                setAnswer(true)
+            }
         }, 1000)
+        
 
         if(answer === true){
             clearTimeout(timeout)
