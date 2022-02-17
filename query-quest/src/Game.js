@@ -23,14 +23,19 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
    
 
     useEffect(()=>{
+
+
        if(questions !== []){
            const newQuestions = questions.filter((question)=>{
                return question.category === category[0].name
            })
 
+         const questionObj = newQuestions[Math.floor(Math.random() * (newQuestions.length))]
+           console.log(questionObj)
+
 
            function handleClick(e) { 
-               if (newQuestions[0].correctIndex == e.target.value){
+               if (newQuestions[0].correctIndex === e.target.value){
                     setCorrect(true)
                     console.log("correct")
                     setCorrectAnswers(correctAnswers + 1)
@@ -42,20 +47,23 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
                setAnswer(true)
                console.log(answer)
             }
-           
-           setDisplay(
-               <div>
-               <p>{newQuestions[0].question}</p>
-               <p>{<img src = {newQuestions[0].imageLink}/>}</p>
-               <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {1}>{newQuestions[0].answers[0]}</button>
-               <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {2}>{newQuestions[0].answers[1]}</button>
-               <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {3}>{newQuestions[0].answers[2]}</button>
-               <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {4}>{newQuestions[0].answers[3]}</button>
-               </div>
-            )
-        }
+
+            setDisplay(
+                <div>
+                <p className = {answer ? "hidden" : null}>{questionObj.question}</p>
+                <p className = {answer ? "hidden" : null} >
+                    {<img src = {questionObj.imageLink}/>}</p>
+                <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {1}>{questionObj.answers[0]}</button>
+                <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {2}>{questionObj.answers[1]}</button>
+                <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {3}>{questionObj.answers[2]}</button>
+                <button onClick= {handleClick} className = {answer ? "hidden" : null} value = {4}>{questionObj.answers[3]}</button>
+                </div>
+             )
+           }
     
-    },[answer])
+    },[correct])
+
+
 
 
 
