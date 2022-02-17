@@ -13,12 +13,12 @@
   background-repeat: no-repeat;
   background-position: center 90%;
   float: left;
-  margin: 0%;
-  padding: 0%;
+  margin: 2%;
+  padding: 50px 40px;
   transition: 0.75s;
   opacity: 1;
-  height: 50 px;
-  width: 50 px;
+  height: 200x;
+  width: 300px;
   text-align: center;
 }
 
@@ -31,6 +31,7 @@ width : 350px
 
 * {
   font-family: fantasy;
+  text-align: center;
  }
 
 

@@ -42,8 +42,7 @@ function QuestionForm({handleAddQuestion}) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    
-   
+
 
 
       const formData = {
@@ -53,6 +52,8 @@ function QuestionForm({handleAddQuestion}) {
           answers: [answers1, answers2, answers3, answers4],
           correctIndex: parseInt(correctIndex),
         };
+
+        e.formReset()
         
   fetch("http://localhost:3000/questions", {
     method: "POST",

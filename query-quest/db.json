@@ -24,7 +24,7 @@
     },
     {
       "question": "Who's that pokemon?",
-      "imageLink": "",
+      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
       "answers": [
         "Pikachu",
         "Bulbasaur",
@@ -87,6 +87,42 @@
         "99 days",
         "72 days",
         "57 days"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 4170007201,
+      "question": "Who painted the Mona Lisa",
+      "category": "Art",
+      "answers": [
+        "Raphael",
+        "Da Vinci",
+        "Dicaprio",
+        "Michelangelo"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 2871120371,
+      "question": "Who wrote The Great Gasby?",
+      "category": "Literature",
+      "answers": [
+        "John Steinbeck",
+        "Mark Twain",
+        "Harper Lee",
+        "F. Scott Fitzgerald"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": 7895338504,
+      "question": "Which planet in our solar system is the largest?",
+      "category": "Science",
+      "answers": [
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Saturn"
       ],
       "correctIndex": 3
     }
