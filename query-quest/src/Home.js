@@ -4,6 +4,8 @@ import mush2 from "./2mushrooms.png"
 import mush3 from "./3mushrooms.png"
 import mush4 from "./4mushrooms.png"
 import mush5 from "./5mushrooms.png"
+import { NavLink } from "react-router-dom";
+
 function Home({correctAnswers}) {
 
   const imgLink = "https://previews.123rf.com/images/tigatelu/tigatelu1410/tigatelu141000114/33366882-cartoon-knight-princess-and-dragon.jpg"
@@ -17,6 +19,15 @@ function Home({correctAnswers}) {
     else if (correctAnswers === 5){return <img src= {mush5} className = "size" alt = "image"/>}
     else if (correctAnswers > 5) {return <img src = {imgLink} className = "size" alt = "image"/>}
       }
+
+      const buttonOrNot = (correctAnswers > 0) ? 
+        <div>
+          <NavLink to="/playgame">
+            <button>Return to Game
+            </button>
+          </NavLink> 
+        </div>
+   : null 
     
       
         return (
@@ -30,8 +41,7 @@ function Home({correctAnswers}) {
         <p> She will only be released if you can answer 5 trivia questions correctly. </p> 
         <br/>
         <p>Correct Answers: {correctAnswers}</p>
-          
-
+        {buttonOrNot}
       </div>
       
  </div>

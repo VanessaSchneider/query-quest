@@ -86,29 +86,6 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
 
 
 
-    useEffect(()=>{
-        const timeout = setTimeout(()=>{
-            if(timeRemaining !== 0){
-                setTimeRemaining(()=>timeRemaining-1)
-            }
-            else{
-                setAnswer(true)
-            }
-        }, 1000)
-        
-
-        if(answer === true){
-            clearTimeout(timeout)
-        }
-        
-        return function clearTimeout() {
-            clearInterval(timeout)
-        }
-    },[timeRemaining])
-
-
-
-
     
     return(
         <div>
@@ -118,6 +95,9 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
             {toShow()}
             <NavLink to="/playgame">
             <button>Next Question</button>
+            </NavLink>
+            <NavLink to="/home">
+            <button>Check on the Princess</button>
             </NavLink>
         </div>
     )
