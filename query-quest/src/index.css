@@ -1,3 +1,12 @@
+.prettierBar{
+  width: 300px
+}
+
+
+.navBarLink {
+  margin: 6px;
+}
+
 
 .castleTile {
   display: inline;

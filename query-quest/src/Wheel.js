@@ -15,7 +15,7 @@ function Wheel({handleRandom, categories, randomCategory}) {
   function handleClick() {
   const randomNumber = getRandomCat()
   handleRandom(randomNumber)
-  setTimeout(()=>routeChange(), 3000)
+  setTimeout(()=>routeChange(), 1200)
   }
 
   const catCard = categories.map((category)=>

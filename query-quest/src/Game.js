@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 
 function Game({questions, category}) {
@@ -91,8 +92,12 @@ function Game({questions, category}) {
             {display}
             <p className = {answer ? "hidden" : null}>{timeRemaining} Seconds Left</p>
             {toShow()}
+            <NavLink to="/playgame">
+            <button>Next Question</button>
+            </NavLink>
         </div>
     )
 }
+
 
 export default Game;
