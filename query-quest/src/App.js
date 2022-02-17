@@ -11,6 +11,7 @@ import Game from './Game';
 function App() {
   const [questions, setQuestions]=useState([])
   const [randomCategory, setRandomCategory]=useState(false)
+  const [correctAnswers, setCorrectAnswers] = useState(0)
 
 
 
@@ -42,7 +43,7 @@ return(
     <NavBar />
     <Switch>
         <Route path = "/game">
-          <Game questions = {questions} category = {randomCategory}/>
+        <Game questions = {questions} category = {randomCategory} correctAnswers = {correctAnswers} setCorrectAnswers= {setCorrectAnswers}/>
         </Route>  
         <Route path="/playGame">
           <Wheel handleRandom={handleRandom} randomCategory={randomCategory} categories={categories}/>
@@ -51,7 +52,7 @@ return(
           <QuestionForm handleAddQuestion={handleAddQuestion} />
         </Route>
         <Route path="/">
-          <Home />
+          <Home correctAnswers = {correctAnswers}/>
         </Route>
       </Switch>
   </div>

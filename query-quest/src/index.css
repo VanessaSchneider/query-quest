@@ -136,3 +136,7 @@ li{
   height: 200%;
   text-align: center;
 }
+
+.hidden{
+  visibility: hidden;
+}

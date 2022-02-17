@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 
-function Game({questions, category}) {
+function Game({questions, category, correctAnswers, setCorrectAnswers}) {
     const [display, setDisplay] = useState(null)
     const [timeRemaining, setTimeRemaining] = useState(10);
     const [go, setGo] = useState(true)
@@ -30,26 +30,18 @@ function Game({questions, category}) {
 
 
            function handleClick(e) { 
-                
-
-
                if (newQuestions[0].correctIndex == e.target.value){
-                    setAnswer(true)
                     setCorrect(true)
                     console.log("correct")
+                    setCorrectAnswers(correctAnswers + 1)
                }
                else {
-                    setAnswer(true)
                     setCorrect(false)
                     console.log("incorrect")
                }  
-               
+               setAnswer(true)
+               console.log(answer)
             }
-
-           function handle1(e){ (newQuestions[0].correctIndex === 1) ? setCorrect(true) : setCorrect(false)}
-           function handle2(e){ (newQuestions[0].correctIndex === 2) ? setCorrect(true) : setCorrect(false)}
-           function handle3(e){ (newQuestions[0].correctIndex === 3) ? setCorrect(true) : setCorrect(false)}
-           function handle4(e){ (newQuestions[0].correctIndex === 4) ? setCorrect(true) : setCorrect(false)}
            
            setDisplay(
                <div>
