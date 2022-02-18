@@ -67,7 +67,7 @@
         "It",
         "Prancer"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "category": "Pokemon"
     },
     {
@@ -368,7 +368,7 @@
     },
     {
       "id": 8006093150,
-      "question": "What is considered the largest empire in history?",
+      "question": "What is considered the largest ancient empire in history as far as land?",
       "category": "History",
       "answers": [
         "Ottoman Empire",
