@@ -161,6 +161,222 @@
         "Judy Blume"
       ],
       "correctIndex": 2
+    },
+    {
+      "id": 4074227080,
+      "question": "Where is the Uffizi Gallery located?",
+      "category": "Art",
+      "answers": [
+        "Rome, Italy",
+        "Paris, France",
+        "Florence, Italy",
+        "Barcelona,Spain"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 2121081561,
+      "question": "Who painted the famous painting Starry Night?",
+      "category": "Art",
+      "answers": [
+        "Pablo Picasso",
+        "Claude Monet",
+        "Pierre-Auguste Renoir",
+        "Vincent Van Gogh"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": 3428893012,
+      "question": "Who painted the famous painting Starry Night?",
+      "category": "Entertainment",
+      "answers": [
+        "Pablo Picasso",
+        "Claude Monet",
+        "Pierre-Auguste Renoir",
+        "Vincent Van Gogh"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": 8804220646,
+      "question": "\"Something is rotten in the state of Denmark\" is a memorable quote from which work of Shakespeare's?",
+      "category": "Literature",
+      "answers": [
+        "Hamlet",
+        "Romeo and Juliet",
+        "MacBeth",
+        "King Lear"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 9827636187,
+      "question": "What author was married to Marilyn Monroe?",
+      "category": "Literature",
+      "answers": [
+        "Ernest Heminway",
+        "John Steinback",
+        "Arthur Miller",
+        "Jack Kerouac"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 5571356191,
+      "question": "Gregor Mendel is known to be the father of what kind of science?",
+      "category": "Science",
+      "answers": [
+        "physics",
+        "chemistry",
+        "microbiology",
+        "genetics"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": 4234280250,
+      "question": "What are the lower chambers of the human heart called?",
+      "category": "Science",
+      "answers": [
+        "atriums",
+        "geese",
+        "ventricles",
+        "molars"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 6407498273,
+      "question": "How long does it take for the moon to revolve around the Earth?",
+      "category": "Science",
+      "answers": [
+        "28 days",
+        "365 days",
+        "120 days",
+        "100 days"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 6634811690,
+      "question": "What organ filters blood and helps to regulate water and salt levels in the body?",
+      "category": "Science",
+      "answers": [
+        "liver",
+        "kidneys",
+        "capillaries",
+        "aorta"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 3391090280,
+      "question": "DNA contains Thymine, what replaces Thymine in RNA?",
+      "category": "Science",
+      "answers": [
+        "Guanine",
+        "Uracil",
+        "Cytosine",
+        "Adenine"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 1547589233,
+      "question": "What kind of an animal is a sea monkey?",
+      "category": "Science",
+      "answers": [
+        "snail",
+        "ant",
+        "shrimp",
+        "amoeba"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 9011538608,
+      "question": "What is the only marsupial in the United States?",
+      "category": "Science",
+      "answers": [
+        "weasel",
+        "raccoon ",
+        "opossum",
+        "pidgeon"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 8936177706,
+      "question": "Who was the fourth president of the United States?",
+      "category": "History",
+      "answers": [
+        "George Washington",
+        "Alexander Hamilton",
+        "John Quincy Adams",
+        "James Madison"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": 924427484,
+      "question": "Who do Taylor Swift's fans believe the song \"All Too Well\" is about?",
+      "category": "Entertainment",
+      "answers": [
+        "Joe Jonas",
+        "Justin Bieber",
+        "Jake Gyllenhaal",
+        "Tom Hiddleston"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 8006093150,
+      "question": "What is considered the largest empire in history?",
+      "category": "History",
+      "answers": [
+        "Ottoman Empire",
+        "Mongol Empire",
+        "Roman Empire",
+        "Egyptian Empire"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 590472438,
+      "question": "Who won the first season of American Idol?",
+      "category": "Entertainment",
+      "answers": [
+        "Carrie Underwood",
+        "Kelly Clarkson",
+        "Justin Guarini",
+        "Ruben Studdard"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 2686728722,
+      "question": "What animal was Templeton in the book Charlotte's Web?",
+      "category": "Literature",
+      "answers": [
+        "rat",
+        "pig",
+        "duck",
+        "cow"
+      ],
+      "correctIndex": 1
     }
+    {
+      "question": "Who's that pokemon?",
+      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+      "answers": [
+        "Psyduck",
+        "Ghastly",
+        "Rhydon",
+        "Alakazam"
+      ],
+      "correctIndex": 1,
+      "category": "Pokemon"
+    },
   ]
 }

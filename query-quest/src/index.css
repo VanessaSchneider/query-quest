@@ -67,6 +67,13 @@ width: 70%
 
 
 
+button {
+  padding: 0px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+
 select {
   width : 175px;
   padding: 0px;
