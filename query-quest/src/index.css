@@ -141,7 +141,12 @@ li{
   visibility: hidden;
 }
 
+.block{
+  visibility: block;
+}
+
 .singleCard{
   text-align: center;
   justify-content: center;
+  height: 50px
 }

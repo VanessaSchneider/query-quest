@@ -90,15 +90,17 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
     return(
         <div>
             <h1>Here's Your Question:</h1>
-            {display}
-            <p className = {answer ? "hidden" : null}>{timeRemaining} Seconds Left</p>
             {toShow()}
+            <div className = {answer ? "block" : "hidden"}>
             <NavLink to="/playgame">
             <button>Next Question</button>
             </NavLink>
             <NavLink to="/home">
-            <button>Check on the Princess</button>
+            <button>Check on the 👸</button>
             </NavLink>
+            </div>
+            {display}
+            <p className = {answer ? "hidden" : null}>{timeRemaining} Seconds Left</p>
         </div>
     )
 }
