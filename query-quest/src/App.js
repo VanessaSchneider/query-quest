@@ -43,7 +43,8 @@ return(
     <NavBar />
     <Switch>
         <Route path = "/game">
-        <Game questions = {questions} category = {randomCategory} correctAnswers = {correctAnswers} setCorrectAnswers= {setCorrectAnswers}/>
+        <Game questions = {questions} category = {randomCategory} correctAnswers = {correctAnswers} 
+        setCorrectAnswers= {setCorrectAnswers} />
         </Route>  
         <Route path="/playGame">
           <Wheel handleRandom={handleRandom} randomCategory={randomCategory} categories={categories}/>

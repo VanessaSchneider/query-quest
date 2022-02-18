@@ -20,6 +20,11 @@ function Home({correctAnswers}) {
     else if (correctAnswers > 5) {return <img src = {imgLink} className = "size" alt = "image"/>}
       }
 
+      
+
+
+
+
       const buttonOrNot = (correctAnswers > 0) ? 
         <div>
           <NavLink to="/playgame">
