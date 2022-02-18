@@ -55,7 +55,7 @@ function QuestionForm({handleAddQuestion}) {
 
         
         
-  fetch("http://localhost:3000/questions", {
+  fetch("http://localhost:8000/questions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -12,6 +12,30 @@
       "category": "Science"
     },
     {
+      "question": "Who's that pokemon?",
+      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+      "answers": [
+        "Haunter",
+        "Ghost",
+        "Floaty",
+        "Snorlax"
+      ],
+      "correctIndex": 1,
+      "category": "Pokemon"
+    },
+    {
+      "question": "Who's that pokemon?",
+      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+      "answers": [
+        "Ducky",
+        "Psyduck",
+        "Quacker",
+        "Eevee"
+      ],
+      "correctIndex": 2,
+      "category": "Pokemon"
+    },
+    {
       "question": "Where did Romeo and Juliet take place?",
       "answers": [
         "Verona, Italy",
@@ -35,9 +59,33 @@
       "category": "Pokemon"
     },
     {
+      "question": "Who's that pokemon?",
+      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+      "answers": [
+        "Clowney",
+        "Mr. Mime",
+        "It",
+        "Prancer"
+      ],
+      "correctIndex": 1,
+      "category": "Pokemon"
+    },
+    {
+      "question": "Who's that pokemon?",
+      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+      "answers": [
+        "Haunter",
+        "Mr. Mime",
+        "Alakazam",
+        "Snorlax"
+      ],
+      "correctIndex": 3,
+      "category": "Pokemon"
+    },
+    {
       "question": "Who was the 16th President of the United States?",
       "answers": [
-        "Donald Trump",
+        "Joe Biden",
         "Abraham Lincoln",
         "William Taft",
         "Thomas Jefferson"
@@ -178,18 +226,6 @@
       "id": 2121081561,
       "question": "Who painted the famous painting Starry Night?",
       "category": "Art",
-      "answers": [
-        "Pablo Picasso",
-        "Claude Monet",
-        "Pierre-Auguste Renoir",
-        "Vincent Van Gogh"
-      ],
-      "correctIndex": 4
-    },
-    {
-      "id": 3428893012,
-      "question": "Who painted the famous painting Starry Night?",
-      "category": "Entertainment",
       "answers": [
         "Pablo Picasso",
         "Claude Monet",
@@ -365,18 +401,54 @@
         "cow"
       ],
       "correctIndex": 1
-    }
-    {
-      "question": "Who's that pokemon?",
-      "imageLink": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
-      "answers": [
-        "Psyduck",
-        "Ghastly",
-        "Rhydon",
-        "Alakazam"
-      ],
-      "correctIndex": 1,
-      "category": "Pokemon"
     },
+    {
+      "id": 3533736303,
+      "question": "What author wrote \"Pride and Prejudice\"?",
+      "category": "Literature",
+      "answers": [
+        "Emily Bronte",
+        "Jane Austen",
+        "Jane Seymour",
+        "Louisa May Alcott"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 920832310,
+      "question": "According to Homer, what started the Trojan War?",
+      "category": "Literature",
+      "answers": [
+        "Helen leaving with Paris to Troy",
+        "Achilles breaking his leg",
+        "The Trojan horse",
+        "Hercules feuding with the King"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 4455173399,
+      "question": "What is Winnie the Pooh's hometown? ",
+      "category": "Literature",
+      "answers": [
+        "Honey Pot Woods",
+        "Jellystone Park",
+        "Springfield",
+        "100 Acre Woods"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": 8299270684,
+      "question": "Who was the first woman to win the Nobel Prize?",
+      "category": "Science",
+      "answers": [
+        "Rosalind Franklin",
+        "Marie Anning",
+        "Marie Curie",
+        "Katherine Johnson"
+      ],
+      "correctIndex": 3
+    }
   ]
 }

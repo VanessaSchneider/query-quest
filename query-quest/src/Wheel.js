@@ -26,10 +26,12 @@ function Wheel({handleRandom, categories, randomCategory}) {
 
     return (
       <div>
+        <br></br>
         <button onClick={handleRandomClick}>Randomly Select Category</button>
         <div className= "ui three stackable cards">
         {randomCategory !== false ? singleCatCard : catCard}
-      </div>
+       </div>
+      
       </div>
     );
   }

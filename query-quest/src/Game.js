@@ -91,6 +91,7 @@ function Game({questions, category, correctAnswers, setCorrectAnswers, setStartN
     
     return(
         <div>
+            <br></br>
             <h1>Here's Your Question:</h1>
             {toShow()}
             <div className = {answer ? "block" : "hidden"}>
