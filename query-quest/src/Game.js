@@ -84,8 +84,6 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
     },[timeRemaining])
 
 
-
-
     
     return(
         <div>
@@ -93,7 +91,7 @@ function Game({questions, category, correctAnswers, setCorrectAnswers}) {
             {toShow()}
             <div className = {answer ? "block" : "hidden"}>
             <NavLink to="/playgame">
-            <button>Next Question</button>
+            <button> Next Question</button>
             </NavLink>
             <NavLink to="/home">
             <button>Check on the 👸</button>

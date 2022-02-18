@@ -149,6 +149,30 @@
         "coffee cup"
       ],
       "correctIndex": 4
+    },
+    {
+      "id": 720140782,
+      "question": "Mark Twain’s characters Tom Sawyer and Huckleberry Finn live in which state?",
+      "category": "Literature",
+      "answers": [
+        "Arkansas",
+        "Missouri",
+        "Kansas",
+        "Tennessee"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 7939199999,
+      "question": "Who is the author of the Chronicles of Narnia series?",
+      "category": "Literature",
+      "answers": [
+        "E.B. White",
+        "C.S. Lewis",
+        "Shel Silverstein",
+        "Judy Blume"
+      ],
+      "correctIndex": 2
     }
   ]
 }

@@ -11,11 +11,12 @@ function Wheel({handleRandom, categories, randomCategory}) {
         history.push(path);
     }
 
-  function handleClick() {
+  function handleRandomClick() {
   const randomNumber = getRandomCat()
   handleRandom(randomNumber)
   setTimeout(()=>routeChange(), 1200)
   }
+
 
   const catCard = categories.map((category)=>
   (<CategoryCard category={category} key={category.name}/> ))
@@ -25,7 +26,7 @@ function Wheel({handleRandom, categories, randomCategory}) {
 
     return (
       <div>
-        <button onClick={handleClick}>Randomly Selected Category</button>
+        <button onClick={handleRandomClick}>Randomly Selected Category</button>
         <div className= "ui three stackable cards">
         {randomCategory !== false ? singleCatCard : catCard}
       </div>
