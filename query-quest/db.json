@@ -87,9 +87,8 @@
         "72 days",
         "57 days"
       ],
-      "correctIndex": 3,      
+      "correctIndex": 3,
       "category": "Entertainment"
-
     },
     {
       "id": 4170007201,
@@ -138,7 +137,18 @@
       ],
       "correctIndex": 2,
       "category": "Pokemon"
+    },
+    {
+      "id": 2856172576,
+      "question": "What modern item accidentally made an appearance in the final season of Game of Thrones?",
+      "category": "Entertainment",
+      "answers": [
+        "cell phone",
+        "candy wrapper",
+        "sneakers",
+        "coffee cup"
+      ],
+      "correctIndex": 4
     }
-    
   ]
 }

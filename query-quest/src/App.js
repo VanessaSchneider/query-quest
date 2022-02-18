@@ -16,7 +16,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/questions")
+    fetch("http://localhost:8000/questions")
       .then((r) => r.json())
       .then((data) => {
         setQuestions(data)

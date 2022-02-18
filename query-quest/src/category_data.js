@@ -9,8 +9,7 @@ const categories = [
     {
       id: 2,
       name: "Pokemon",
-      image:
-        "🐱"
+      image: <img src="https://www.warmoven.in/media/catalog/product/cache/e4dbbe88580d6bb18ca174b8700f08f3/image/14883cb6/pikachu-photo-cake-2.png.mst.webp" className = "pikasize" alt = "pikachu" />
     },
 
     {

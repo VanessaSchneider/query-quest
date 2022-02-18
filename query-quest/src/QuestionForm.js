@@ -53,7 +53,7 @@ function QuestionForm({handleAddQuestion}) {
           correctIndex: parseInt(correctIndex),
         };
 
-        e.formReset()
+        
         
   fetch("http://localhost:3000/questions", {
     method: "POST",
